@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Titulo -->
+    <title id="pageTitle"></title>
+
+    <!-- Tipografia -->
+   <link
+  href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Playfair+Display:wght@400;700&family=Cormorant+Garamond:wght@300;400;600&family=Montserrat:wght@300;400;600;700&display=swap"
+  rel="stylesheet"
+/>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- AOS Animations -->
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+/>  
+</head>
+
+  <body>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="overlay"></div>
+
+      <div
+  class="hero-content"
+  data-aos="fade-up"
+>
+        <p class="save-the-date">SAVE THE DATE</p>
+
+        <h1 id="coupleNames"></h1>
+
+        <p class="date" id="dateText"></p>
+
+        <button id="musicButton">🎵 Música</button>
+      </div>
+    </section>
+
+    <!-- CUENTA REGRESIVA -->
+    <section
+  class="countdown-section"
+  data-aos="fade-up"
+>
+      <h2>Faltan</h2>
+
+      <div class="countdown">
+        <div>
+          <span id="days">0</span>
+          <p>Días</p>
+        </div>
+
+        <div>
+          <span id="hours">0</span>
+          <p>Horas</p>
+        </div>
+
+        <div>
+          <span id="minutes">0</span>
+          <p>Min</p>
+        </div>
+
+        <div>
+          <span id="seconds">0</span>
+          <p>Seg</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- UBICACION -->
+    <section
+  class="location"
+  data-aos="fade-right"
+>
+      <h2>Ubicación</h2>
+
+      <p id="locationName"></p>
+
+      <a
+        id="mapsLink"
+        target="_blank"
+        class="map-button"
+      >
+        Ver ubicación
+    </a>
+    </section>
+
+    <!-- RSVP -->
+    <section
+  class="rsvp"
+  data-aos="zoom-in"
+>
+      <h2>Confirmar asistencia</h2>
+
+      <a
+        id="whatsappLink"
+        target="_blank"
+        class="rsvp-button"
+      >
+        Confirmar por WhatsApp
+      </a>
+    </section>
+    
+<!-- FOOTER -->
+
+<footer class="footer">
+  <a
+    id="instagramLink"
+    target="_blank"
+    class="footer-instagram"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="18"
+      height="18"
+      fill="currentColor"
+      viewBox="0 0 16 16"
+    >
+      <path
+        d="M8 0C5.829 0 5.556.01 4.703.048
+        3.85.088 3.269.222 2.76.42
+        a3.9 3.9 0 0 0-1.417.923
+        A3.9 3.9 0 0 0 .42 2.76
+        c-.198.509-.332 1.09-.372
+        1.943C.01 5.556 0 5.829 0 8
+        c0 2.171.01 2.444.048 3.297
+        .04.852.174 1.434.372
+        1.943.205.526.478.972.923
+        1.417.445.445.891.718
+        1.417.923.509.198 1.09.332
+        1.943.372C5.556 15.99 5.829 16
+        8 16c2.171 0 2.444-.01
+        3.297-.048.852-.04 1.434-.174
+        1.943-.372a3.9 3.9 0 0 0
+        1.417-.923 3.9 3.9 0 0 0
+        .923-1.417c.198-.509.332-1.09
+        .372-1.943C15.99 10.444 16
+        10.171 16 8c0-2.171-.01-2.444
+        -.048-3.297-.04-.852-.174-1.434
+        -.372-1.943a3.9 3.9 0 0 0
+        -.923-1.417A3.9 3.9 0 0 0
+        13.24.42c-.509-.198-1.09-.332
+        -1.943-.372C10.444.01 10.171 0
+        8 0zm0 1.441c2.136 0 2.389.008
+        3.232.046.78.036 1.203.166
+        1.485.276.373.145.64.319.92.6
+        .281.28.455.547.6.92.11.282
+        .24.705.276 1.485.038.843.046
+        1.096.046 3.232s-.008 2.389-.046
+        3.232c-.036.78-.166 1.203-.276
+        1.485a2.5 2.5 0 0 1-.6.92
+        2.5 2.5 0 0 1-.92.6c-.282.11
+        -.705.24-1.485.276-.843.038
+        -1.096.046-3.232.046s-2.389-.008
+        -3.232-.046c-.78-.036-1.203-.166
+        -1.485-.276a2.5 2.5 0 0 1-.92-.6
+        2.5 2.5 0 0 1-.6-.92c-.11-.282
+        -.24-.705-.276-1.485C1.449 10.389
+        1.441 10.136 1.441 8s.008-2.389
+        .046-3.232c.036-.78.166-1.203
+        .276-1.485a2.5 2.5 0 0 1 .6-.92
+        2.5 2.5 0 0 1 .92-.6c.282-.11
+        .705-.24 1.485-.276.843-.038
+        1.096-.046 3.232-.046zm0 2.454
+        a4.105 4.105 0 1 0 0 8.21
+        4.105 4.105 0 0 0 0-8.21zm0
+        6.769a2.664 2.664 0 1 1 0-5.328
+        2.664 2.664 0 0 1 0 5.328zm4.27-7.845
+        a.96.96 0 1 1-1.92 0 .96.96
+        0 0 1 1.92 0z"
+      />
+    </svg>
+
+    <span id="instagramText"></span>
+  </a>
+</footer>
+
+    <!-- MUSICA -->
+    <audio id="backgroundMusic" loop>
+      <source src="assets/music/song.mp3" type="audio/mpeg" />
+    </audio>
+
+    <!-- JS -->
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+  
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+  AOS.init({
+    duration: 1200,
+    once: true,
+  });
+</script>
+</body>
+</html>
